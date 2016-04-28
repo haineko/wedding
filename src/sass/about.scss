@@ -1,0 +1,25 @@
+.about {
+	@include clearfix;
+	margin-bottom: 30px;
+	padding: 0 55px 0 70px;
+
+	&__avatar {
+		@include left;
+		width: 256px;
+		img {
+			display: block;
+		}
+	}
+
+	&__text {
+		@include right;
+		width: 541px;
+		color:$color-text-hover;
+
+		p {
+			margin: 0;
+			margin-bottom: 30px;
+			line-height: 1.1;
+		}
+	}
+}

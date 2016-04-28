@@ -1,0 +1,31 @@
+.main-menu {
+	margin: 0 auto;
+	width: 490px;
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		font-size: 0;
+		list-style: none;
+		text-align: center;
+	}
+
+	&__item {
+		// font-family: 'Antique', Arial, sans-serif;
+		font-family: 'a_AntiqueTitulGr', arial, sans-serif;
+		margin-right: 25px;
+		display: inline-block;
+		font-size: $font-size-nav;
+		text-transform: uppercase;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:hover,
+		&:active,
+		&--active  {
+			color: $color-text-hover;
+		}
+	}
+}

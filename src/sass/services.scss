@@ -1,0 +1,29 @@
+.services {
+	margin-bottom: 33px;
+	padding-left: 70px;
+
+	&__header {
+		margin: 0;
+		margin-bottom: 26px;
+		font-family: 'a_AntiqueTitulGr', arial, sans-serif;
+		font-size: $font-size;
+		text-transform: uppercase;
+	}
+
+	&__package {
+		margin-bottom: 28px;
+	}
+
+	&__title {
+		margin: 0;
+		font-family: 'a_AntiqueTitulGr', arial, sans-serif;
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+
+	&__description,
+	&__time,
+	&__text{
+		margin: 0;
+	}
+}
