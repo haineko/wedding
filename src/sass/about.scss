@@ -2,6 +2,8 @@
 	@include clearfix;
 	margin-bottom: 30px;
 	padding: 0 55px 0 70px;
+	height: 375px;
+	font-size: 16px;
 
 	&__avatar {
 		@include left;
@@ -18,7 +20,7 @@
 
 		p {
 			margin: 0;
-			margin-bottom: 30px;
+			margin-bottom: 22px;
 			line-height: 1.1;
 		}
 	}

@@ -8,6 +8,8 @@ body {
   	padding: 0;
   	min-width: 320px;
   	font-family: 'Kurale', 'Georgia', 'Times New Roman', 'Times', serif;
+  	font-size: $font-size;
+  	line-height: 1.1;
   	color: $color-text-hover;
   	background-color: $bg-color;
 }

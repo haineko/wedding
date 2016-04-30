@@ -1,3 +1,64 @@
 .main-footer {
-	
+	padding-top: 70px;
+
+	&__email {
+		margin: 0 auto 15px;
+		width: 320px;
+		text-align: center;
+
+		a {
+			margin-left: 5px;
+			font-family: 'Kurale', 'Georgia', 'Times New Roman', 'Times', serif;
+		  	font-size: $font-size;
+		  	line-height: 1.1;
+		  	color: $color-text-hover;
+		  	text-decoration: none;
+
+		  	&:hover,
+		  	&:active {
+		  		color: $color-text-hover;
+		  		text-decoration: none;
+		  	}
+		}
+	}
+
+	&__phone {
+		position: relative;
+		margin: 0 auto;
+		width: 320px;
+		text-align: center;
+		font-size: 0;
+
+		a {
+			margin-right: 12px;
+			font-family: 'Kurale', 'Georgia', 'Times New Roman', 'Times', serif;
+		  	font-size: $font-size;
+		  	line-height: 1.1;
+		  	color: $color-text-hover;
+		  	text-decoration: none;
+
+		  	&:hover,
+		  	&:active {
+		  		color: $color-text-hover;
+		  		text-decoration: none;
+		  	}
+
+		  	&:last-child {
+		  		margin-right: 0;
+		  	}
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: 2px;
+			left: 0;
+			width: 18px;
+			height: 23px;
+			background-image: url('../img/icon-phone.png');
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			background-size: cover;
+		}
+	}
 }
