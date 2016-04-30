@@ -373,6 +373,8 @@ body {
   padding: 0;
   min-width: 320px;
   font-family: 'Kurale', 'Georgia', 'Times New Roman', 'Times', serif;
+  font-size: 16px;
+  line-height: 1.1;
   color: #464545;
   background-color: #fff; }
 
@@ -421,12 +423,60 @@ body {
     .main-menu__item:hover, .main-menu__item:active, .main-menu__item--active {
       color: #464545; }
 
+.main-footer {
+  padding-top: 70px; }
+  .main-footer__email {
+    margin: 0 auto 15px;
+    width: 320px;
+    text-align: center; }
+    .main-footer__email a {
+      margin-left: 5px;
+      font-family: 'Kurale', 'Georgia', 'Times New Roman', 'Times', serif;
+      font-size: 16px;
+      line-height: 1.1;
+      color: #464545;
+      text-decoration: none; }
+      .main-footer__email a:hover, .main-footer__email a:active {
+        color: #464545;
+        text-decoration: none; }
+  .main-footer__phone {
+    position: relative;
+    margin: 0 auto;
+    width: 320px;
+    text-align: center;
+    font-size: 0; }
+    .main-footer__phone a {
+      margin-right: 12px;
+      font-family: 'Kurale', 'Georgia', 'Times New Roman', 'Times', serif;
+      font-size: 16px;
+      line-height: 1.1;
+      color: #464545;
+      text-decoration: none; }
+      .main-footer__phone a:hover, .main-footer__phone a:active {
+        color: #464545;
+        text-decoration: none; }
+      .main-footer__phone a:last-child {
+        margin-right: 0; }
+    .main-footer__phone::before {
+      content: '';
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      width: 18px;
+      height: 23px;
+      background-image: url("../img/icon-phone.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: cover; }
+
 .main {
   margin-bottom: 60px; }
 
 .about {
   margin-bottom: 30px;
-  padding: 0 55px 0 70px; }
+  padding: 0 55px 0 70px;
+  height: 375px;
+  font-size: 16px; }
   .about::before, .about::after {
     content: "";
     display: table;
@@ -442,7 +492,7 @@ body {
     color: #464545; }
     .about__text p {
       margin: 0;
-      margin-bottom: 30px;
+      margin-bottom: 22px;
       line-height: 1.1; }
 
 .services {
@@ -453,14 +503,16 @@ body {
     margin-bottom: 26px;
     font-family: 'a_AntiqueTitulGr', arial, sans-serif;
     font-size: 16px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: bold; }
   .services__package {
     margin-bottom: 28px; }
   .services__title {
     margin: 0;
     font-family: 'a_AntiqueTitulGr', arial, sans-serif;
     font-size: 14px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: bold; }
   .services__description, .services__time, .services__text {
     margin: 0; }
 
@@ -483,9 +535,36 @@ body {
     margin-bottom: 18px;
     font-family: 'a_AntiqueTitulGr', arial, sans-serif;
     font-size: 14px;
-    line-height: 1.2; }
+    line-height: 1.2;
+    font-weight: bold; }
     .shooting__item::before {
       content: '-';
       position: relative;
       top: 0;
       left: -5px; }
+
+.social {
+  margin: 0 auto 10px;
+  width: 140px;
+  font-size: 0;
+  text-align: center; }
+  .social__btn {
+    margin-right: 20px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    text-indent: 100%;
+    white-space: nowrap;
+    vertical-align: top;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover; }
+    .social__btn:nth-child(2n) {
+      margin-right: 0; }
+    .social__btn--vk {
+      background-image: url("../img/icon-vk.png"); }
+    .social__btn--fb {
+      background-image: url("../img/icon-fb.png"); }
