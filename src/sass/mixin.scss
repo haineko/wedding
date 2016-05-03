@@ -36,6 +36,18 @@
   color: transparent;
 }
 
+@mixin mobile {
+  @media (max-width: #{$tablet-mini-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet-mini {
+  @media (min-width: #{$tablet-mini-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
     @content;

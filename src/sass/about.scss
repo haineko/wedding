@@ -24,4 +24,48 @@
 			line-height: 1.1;
 		}
 	}
+	
+	@include tablet {
+		padding: 0;
+		font-size: 16px;
+
+		&__text {
+			width: calc(100% - 276px);
+			p {
+				margin-bottom: 18px;
+				line-height: 1;
+			}
+		}
+	}
+
+	@include tablet-mini {
+		padding: 0;
+		font-size: 14px;
+
+		&__text {
+			width: calc(100% - 276px);
+			p {
+				margin-bottom: 16px;
+				line-height: 1;
+			}
+		}
+	}
+
+	@include mobile {
+		padding: 0;
+		font-size: 14px;
+		&__avatar {
+			float: none;
+			margin: 0 auto 16px;
+
+		}
+		&__text {
+			float: none;
+			width: 100%;
+			p {
+				margin-bottom: 16px;
+				line-height: 1;
+			}
+		}
+	}
 }

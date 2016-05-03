@@ -4,7 +4,7 @@
 	&__header {
 		margin: 0;
 		margin-bottom: 16px;
-		font-family: 'a_AntiqueTitulGr', arial, sans-serif;
+		font-family: 'Lora', 'Georgia', 'Times New Roman', 'Times', serif;
 		font-size: $font-size;
 		line-height: 1;
 		text-transform: uppercase;
@@ -20,7 +20,7 @@
 		position: relative;
 		padding-left: 5px;
 		margin-bottom: 18px;
-		font-family: 'a_AntiqueTitulGr', arial, sans-serif;
+		font-family: 'Lora', 'Georgia', 'Times New Roman', 'Times', serif;
 		font-size: 14px;
 		line-height: 1.2;
 		font-weight: bold;
@@ -32,5 +32,13 @@
 			left: -5px;
 
 		}
+	}
+
+	@include tablet {
+		padding-left: 0;
+	}
+
+	@include tablet-mini {
+		padding-left: 0;
 	}
 }

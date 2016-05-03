@@ -1,4 +1,4 @@
-@include font-face("Antique", "../font/a_antiquetitulgr_allfont.ru-webfont", normal, normal);
+// @include font-face("Antique", "../font/a_antiquetitulgr_allfont.ru-webfont", normal, normal);
 // @include font-face("Kurale", "../font/dkurale-regular-webfont", normal, normal);
 
 html, 
@@ -12,9 +12,33 @@ body {
   	line-height: 1.1;
   	color: $color-text-hover;
   	background-color: $bg-color;
+
+    @include tablet {
+      border: 1px solid red;
+    }
+
+    @include tablet-mini {
+      border: 1px solid green;
+    }
+
+    @include mobile {
+      border: 1px solid blue;
+    }
 }
 
 .wrapper {
 	margin: 0 auto;
 	width: 960px;
+  
+  @include tablet {
+     width: 96%;
+  }
+
+  @include tablet-mini {
+     width: 96%;
+  }
+
+  @include mobile {
+     width: 96%;
+  }
 }
