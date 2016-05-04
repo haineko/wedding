@@ -526,38 +526,41 @@ body {
       margin: 0;
       margin-bottom: 22px;
       line-height: 1.1; }
-  @media (min-width: 740px) and (max-width: 959px) {
-    .about {
-      padding: 0;
-      font-size: 16px; }
-      .about__text {
-        width: calc(100% - 276px); }
-        .about__text p {
-          margin-bottom: 18px;
-          line-height: 1; } }
-  @media (min-width: 640px) and (max-width: 739px) {
-    .about {
-      padding: 0;
-      font-size: 14px; }
-      .about__text {
-        width: calc(100% - 276px); }
-        .about__text p {
-          margin-bottom: 16px;
-          line-height: 1; } }
-  @media (max-width: 639px) {
-    .about {
-      padding: 0;
-      font-size: 14px;
-      height: auto; }
-      .about__avatar {
-        float: none;
-        margin: 0 auto 16px; }
-      .about__text {
-        float: none;
-        width: 100%; }
-        .about__text p {
-          margin-bottom: 16px;
-          line-height: 1; } }
+
+@media (min-width: 740px) and (max-width: 959px) {
+  .about {
+    padding: 0;
+    font-size: 16px; }
+    .about__text {
+      width: calc(100% - 276px); }
+      .about__text p {
+        margin-bottom: 18px;
+        line-height: 1; } }
+
+@media (min-width: 640px) and (max-width: 739px) {
+  .about {
+    padding: 0;
+    font-size: 14px; }
+    .about__text {
+      width: calc(100% - 276px); }
+      .about__text p {
+        margin-bottom: 16px;
+        line-height: 1; } }
+
+@media (max-width: 639px) {
+  .about {
+    padding: 0;
+    font-size: 14px;
+    height: auto; }
+    .about__avatar {
+      float: none;
+      margin: 0 auto 16px; }
+    .about__text {
+      float: none;
+      width: 100%; }
+      .about__text p {
+        margin-bottom: 16px;
+        line-height: 1; } }
 
 .services {
   margin-bottom: 33px;
