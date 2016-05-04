@@ -7,6 +7,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Lora:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<!-- <link href="http://allfont.ru/allfont.css?fonts=a_antiquetitulgr" rel="stylesheet" type="text/css" /> -->
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/modernizr.custom.js"></script>
 </head>
 <body>
 	<header class="main-header">
@@ -14,68 +15,40 @@
 			<a class="main-header__logo" href="">Светлана Кордюкова</a>
 			<nav class="main-menu">
 				<ul class="main-menu__list">
-					<li class="main-menu__item"><a class="main-menu__link" href="index.html">Главная</a></li>
-					<li class="main-menu__item"><a class="main-menu__link" href="gallery.html">Портфолио</a></li>
+					<li class="main-menu__item"><a class="main-menu__link main-menu__link--active" href="index.html">Главная</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="porfolio.html">Портфолио</a></li>
 					<li class="main-menu__item"><a class="main-menu__link" href="blog.html">Блог</a></li>
-					<li class="main-menu__item main-menu__item--active"><a class="main-menu__link" href="services.html">Услуги</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="services.html">Услуги</a></li>
 					<li class="main-menu__item"><a class="main-menu__link" href="#">Отзывы</a></li>
 				</ul>
 			</nav>	
 		</div>
 	</header>
 	<div class="main">
-		<div class="wrapper">
-			<div class="about">
-				<div class="about__avatar">
-					<img src="img/avatar.jpg" alt="Светлана Кордюкова">
-				</div>
-				<div class="about__text">
-					<p>Привет! Меня зовут Светлана Кордюкова, я живу в городе Липецке, и занимаюсь своим любимым делом - фотографирую счастливых людей!</p>
-					<p>Для меня очень важно не только уметь делать качественные фотографии, но и стать вашим другом, человеком, которому хочется доверить самое важное событие — свадьбу. Я получаю огромный заряд вдохновения от всего творческого процесса, начиная от выбора идеи съёмки, заканчивая вручением заветных фотокарточек довольным молодожёнам!) Ради этих эмоций хочется идти дальше, развиваться и становиться лучше!</p>
-					<p>Если вы как и я, любите естественные чистые цвета, яркие краски, съёмки на природе, естественный свет, то мы пределённо поладим!:)</p>
-					<p>Для простоты понимания я решила распределить свои свадебные услуги на пакеты. Это стандартные пакеты. Если ни один из них Вам не подошёл, мы в индивидуальном порядке обсудим каким он будет, именно Ваш свадебный день!</p>
-				</div>
-			</div>
-			<div class="services">
-				<p class="services__header">Свадебные пакеты</p>
-				<div class="services__package">
-					<p class="services__title">Бюджетный</p>
-					<p class="services__description">Съёмочный день включает в себя съёмку в ЗАГСе или на выездной регистрации и прогулку</p>
-					<p class="services__time">Съёмка длится не более 4 часов</p>
-				</div>
-				<div class="services__package">
-					<p class="services__title">Минимальный</p>
-					<p class="services__description">Съёмочный день включает в себя съёмку сборов утра невесты/жениха , съёмку в ЗАГСе или на выездной регистрациии прогулку</p>
-					<p class="services__time">Съёмка длится не более 6 часов</p>
-				</div>
-				<div class="services__package">
-					<p class="services__title">Оптимальный</p>
-					<p class="services__description">Съёмочный день включает в себя съёмку сборов утра невесты/жениха , съёмку в ЗАГСе или на выездной регистрации, прогулку и банкет до первого танца молодожёнов</p>
-					<p class="services__time">Съёмка длится не более 8 часов</p>
-				</div>
-				<div class="services__package">
-					<p class="services__title">Целый день</p>
-					<p class="services__description">Съёмочный день включает в себя съёмку сборов утра невесты/жениха , съёмку в ЗАГСе или на выездной регистрации, прогулку и весь банкет.</p>
-					<p class="services__time"></p>
-				</div>
-				<p class="services__text">Для того чтобы забронировать свадебную дату нам необходимо познакомится , понравиться друг другу и подписать договор.</p>
-				<p class="services__text">Время обработки свадьбы 2-2.5 месяца (в зависимости от загруженности сезона)</p>
-				<p class="services__text">Все свадебные пакеты оплачиваются непосредственно на торжестве в полном объёме</p>
-				<p class="services__text">Выезд в другой город обсуждается индивидуально</p>
-			</div>
-			<div class="shooting">
-				<p class="shooting__header">Съёмки</p>
-				<ul class="shooting__list">
-					<li class="shooting__item">Фотосессия  Love Story</li>
-					<li class="shooting__item">Семейные фотосессии</li>
-					<li class="shooting__item">Детские фотосессии</li>
-					<li class="shooting__item">Фотосессия беременности</li>
-					<li class="shooting__item">Студийная съёмка</li>
-					<li class="shooting__item">Портретная съёмка</li>
-				</ul>
-				<p>Время обработки фотосессии до 2 мес.</p>
-			</div>
-		</div>
+		<ul class="gallery" id="gallery">
+			<li class="gallery__item"><a href="#"><img class="gallery__photo" src="https://pp.vk.me/c622017/v622017463/21af0/hKI69zv42Xk.jpg"></a></li>
+			<li class="gallery__item"><a href="#"><img class="gallery__photo" src="https://pp.vk.me/c622017/v622017463/21afa/8jT6kZMG65w.jpg"></a></li>
+			<li class="gallery__item"><a href="#"><img class="gallery__photo" src="https://pp.vk.me/c622017/v622017463/21b04/CLugosefp0c.jpg"></a></li>
+			<li class="gallery__item"><a href="#"><img class="gallery__photo" src="https://pp.vk.me/c622017/v622017463/1f74d/aQOrBA5i78c.jpg"></a></li>
+			<li class="gallery__item"><a href="#"><img class="gallery__photo" src="https://pp.vk.me/c622017/v622017463/1f739/Dxs6TO6EDjs.jpg"></li>
+			<li class="gallery__item"><a href="#"><img class="gallery__photo" src="https://pp.vk.me/c622017/v622017463/1f725/q1MoX0S8xgI.jpg"></a></li>
+			<li class="gallery__item"><a href="#"><img class="gallery__photo" src="https://pp.vk.me/c636731/v636731463/c61/Qzk03wz8LwY.jpg"></a></li>
+			<li class="gallery__item"><a href="#"><img class="gallery__photo" src="https://pp.vk.me/c636731/v636731463/c75/U075qapMY6g.jpg"></a></li>
+			<li class="gallery__item"><a href="#"><img class="gallery__photo" src="https://pp.vk.me/c636731/v636731463/c7f/I6rIYRZovmM.jpg"></a></li>
+			<li class="gallery__item"><a href="#"><img class="gallery__photo" src="https://pp.vk.me/c633529/v633529463/23da7/mkUcHGcpqIQ.jpg"></a></li>
+			<li class="gallery__item"><a href="#"><img class="gallery__photo" src="https://pp.vk.me/c633529/v633529463/23d93/tNsUeYPun1o.jpg"></a></li>
+			<li class="gallery__item"><a href="#"><img class="gallery__photo" src="https://pp.vk.me/c627627/v627627463/40eb4/n1S3Ee548W0.jpg"></a></li>
+			<li class="gallery__item"><a href="#"><img class="gallery__photo" src="https://pp.vk.me/c627627/v627627463/40ebe/fs-Gvx2I9tk.jpg"></a></li>
+			<li class="gallery__item"><a href="#"><img class="gallery__photo" src="https://pp.vk.me/c628731/v628731463/377f5/Bt2GHbK5emg.jpg"></a></li>
+			<li class="gallery__item"><a href="#"><img class="gallery__photo" src="https://pp.vk.me/c628731/v628731463/37831/d-2tq_dnbX4.jpg"></a></li>
+			<li class="gallery__item"><a href="#"><img class="gallery__photo" src="https://pp.vk.me/c628731/v628731463/377e0/5BhcVLiT-Ps.jpg"></a></li>
+			<li class="gallery__item"><a href="#"><img class="gallery__photo" src="https://pp.vk.me/c628731/v628731463/377cc/Plr9omLFod0.jpg"></a></li>
+			<li class="gallery__item"><a href="#"><img class="gallery__photo" src="https://pp.vk.me/c628731/v628731463/377d6/scnPMu29iDQ.jpg"></a></li>
+			<li class="gallery__item"><a href="#"><img class="gallery__photo" src="https://pp.vk.me/c633318/v633318463/f09d/KOTCpLSY99I.jpg"></a></li>
+			<li class="gallery__item"><a href="#"><img class="gallery__photo" src="https://pp.vk.me/c633318/v633318463/f07f/fXIgE_ulyuQ.jpg"></a></li>
+			<li class="gallery__item"><a href="#"><img class="gallery__photo" src="https://pp.vk.me/c624726/v624726463/479dd/Q2CLPaOOPgE.jpg"></a></li>
+			<li class="gallery__item"><a href="#"><img class="gallery__photo" src="https://pp.vk.me/c624726/v624726463/479d3/0tKgFfiRqJg.jpg"></a></li>
+		</ul>
 	</div>
 	<footer class="main-footer">
 		<div class="social">
@@ -88,5 +61,16 @@
 			<a href="tel:+79158500982">8-915-850-09-82</a>
 		</div>
 	</footer>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/imagesloaded.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/AnimOnScroll.js"></script>
+	<script>
+		new AnimOnScroll( document.getElementById( 'gallery' ), {
+			minDuration : 0.4,
+			maxDuration : 0.7,
+			viewportFactor : 0.2
+		} );
+	</script>
 </body>
 </html>
