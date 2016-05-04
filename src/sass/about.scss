@@ -25,8 +25,12 @@
 		}
 	}
 	
-	@include tablet {
-		padding: 0;
+	
+}
+
+@include tablet {
+		.about {
+			padding: 0;
 		font-size: 16px;
 
 		&__text {
@@ -36,10 +40,12 @@
 				line-height: 1;
 			}
 		}
+		}
 	}
 
 	@include tablet-mini {
-		padding: 0;
+		.about {
+			padding: 0;
 		font-size: 14px;
 
 		&__text {
@@ -49,10 +55,12 @@
 				line-height: 1;
 			}
 		}
+		}
 	}
 
 	@include mobile {
-		padding: 0;
+		.about {
+			padding: 0;
 		font-size: 14px;
 		height: auto;
 		&__avatar {
@@ -68,5 +76,5 @@
 				line-height: 1;
 			}
 		}
+		}
 	}
-}
