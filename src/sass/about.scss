@@ -54,6 +54,7 @@
 	@include mobile {
 		padding: 0;
 		font-size: 14px;
+		height: auto;
 		&__avatar {
 			float: none;
 			margin: 0 auto 16px;

@@ -1,0 +1,91 @@
+
+#columns {
+	column-count: 4; // сколько колонок нужно?
+	column-gap: 1em; // промежуток между блоками (справа или слева)
+
+	/* тоже самое с нужными префиксами на 18 марта 2016 */
+	-webkit-column-count: 4; -moz-column-count: 4; column-count: 4;
+	-webkit-column-gap: 1em; -moz-column-gap: 1em; column-gap: 1em;
+  	width: 98%;
+	max-width: 2600px;
+	margin: 50px auto;
+
+
+@include mobile {
+	column-count: 1; // сколько колонок нужно?
+	column-gap: 1em; // промежуток между блоками (справа или слева)
+
+	/* тоже самое с нужными префиксами на 18 марта 2016 */
+	-webkit-column-count: 1; -moz-column-count: 1; column-count: 1;
+	-webkit-column-gap: 1em; -moz-column-gap: 1em; column-gap: 1em;
+}
+
+@include tablet {
+	column-count: 3; // сколько колонок нужно?
+	column-gap: 1em; // промежуток между блоками (справа или слева)
+
+	/* тоже самое с нужными префиксами на 18 марта 2016 */
+	-webkit-column-count: 3; -moz-column-count: 3; column-count: 3;
+	-webkit-column-gap: 1em; -moz-column-gap: 1em; column-gap: 1em;
+}
+}
+
+div#columns figure {
+	background: #fefefe;
+	// border: 2px solid #fcfcfc;
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	margin: 0 2px 15px;
+	// padding: 5px;
+	display: inline-block; // важно!
+	width: 100%;           // важно!
+	// margin-bottom: 1em;
+	background-color: #eee;
+	transition: opacity .4s ease-in-out;
+	display: inline-block;
+	column-break-inside: avoid;
+}
+
+div#columns figure img {
+	width: 100%; 
+	height: auto;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+}
+
+div#columns figure figcaption {
+  	font-size: 14px;
+	color: #444;
+  	line-height: 1.5;
+}
+
+div#columns:hover figure:not(:hover) {
+	opacity: 0.4;
+}
+
+
+#portfolio[data-columns]::before {
+	content: '3 .column.size-1of3';
+}
+
+// @media screen and (max-width: 480px){
+// 	#portfolio[data-columns]::before {
+// 		content: '1 .column.size-1of1';
+// 	}
+// }
+
+// @media screen and (min-width: 481px) and (max-width: 768px) {
+// 	#portfolio[data-columns]::before {
+// 		content: '2 .column.size-1of2';
+// 	}
+// }
+// @media screen and (min-width: 769px) {
+// 	#portfolio[data-columns]::before {
+// 		content: '3 .column.size-1of3';
+// 	}
+// }
+
+// .column { float: left; }
+// .size-1of1 { width: 100%; }
+// .size-1of2 { width: 50%; }
+// .size-1of3 { width: 33.333%; }

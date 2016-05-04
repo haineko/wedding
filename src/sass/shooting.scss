@@ -7,6 +7,7 @@
 		font-family: 'Lora', 'Georgia', 'Times New Roman', 'Times', serif;
 		font-size: $font-size;
 		line-height: 1;
+		font-weight: bold;
 		text-transform: uppercase;
 	}
 
@@ -23,6 +24,7 @@
 		font-family: 'Lora', 'Georgia', 'Times New Roman', 'Times', serif;
 		font-size: 14px;
 		line-height: 1.2;
+		text-transform: uppercase;
 		font-weight: bold;
 
 		&::before {
@@ -40,5 +42,21 @@
 
 	@include tablet-mini {
 		padding-left: 0;
+		&__header {
+			font-size: 15px;
+		}
+		&__item {
+			font-size: 14px;
+		}
+	}
+
+	@include mobile {
+		padding-left: 0;
+		&__header {
+			font-size: 15px;
+		}
+		&__item {
+			font-size: 14px;
+		}
 	}
 }
