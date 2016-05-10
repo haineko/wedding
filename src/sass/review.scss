@@ -2,12 +2,15 @@
 	
 	&__item {
 		@include clearfix;
-		margin-top: 30px;
 		padding: 15px 0;
 		border-top: 1px dotted #464545;
 
 		&:last-child {
 			border-bottom: 1px dotted #464545;
+		}
+
+		&:first-of-type {
+			margin-top: 35px;
 		}
 	}
 

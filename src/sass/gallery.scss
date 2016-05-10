@@ -32,14 +32,25 @@
 			-webkit-animation: fadeIn 0.65s ease forwards;
 			animation: fadeIn 0.65s ease forwards;
 		}
-
+		a {
+			display: block;
+			overflow: hidden;
+		}
 		// &:not(:hover) {
 		// 	img {
 		// 		opacity: 0.7;
 		// 	}
 		// }
+		// &:nth-child(2n):hover {
+		// 	    box-shadow: 0 0 5px 3px rgba(34, 25, 25, 0.4);
+		// }
 		&:hover {
-			    box-shadow: 0 0 5px 3px rgba(34, 25, 25, 0.4);
+			.gallery__photo {
+		    	-moz-transform: scale(1.1);
+			    -webkit-transform: scale(1.1);
+			    -o-transform: scale(1.1);
+			    transform: scale(1.1);
+			}
 		}
 	}
 	&__photo {
@@ -48,10 +59,14 @@
 		display: block;
 		max-width: 100%;
 		width: 100%;
-		-webkit-transition: all .4s ease-in-out;
-	    -moz-transition: all .4s ease-in-out;
-	    -o-transition: all .4s ease-in-out;
-	    transition: all .4s ease-in-out;
+		transform: scale(1);
+		-webkit-transition: all .5s ease-out;
+	    -moz-transition: all .5s ease-out;
+	    -o-transition: all .5s ease-out;
+	    transition: all .5s ease-out;
+	    -webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
 	}
 }
 
