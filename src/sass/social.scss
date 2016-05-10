@@ -1,6 +1,6 @@
 .social {
 	margin: 0 auto 10px;
-	width: 140px;
+	width: 180px;
 	font-size: 0;
 	text-align: center;
 
@@ -19,7 +19,7 @@
 		background-position: 0 0;
 		background-size: cover;
 
-		&:nth-child(2n) {
+		&:nth-child(3n) {
 			margin-right: 0;
 		}
 
@@ -29,6 +29,10 @@
 
 		&--fb {
 			background-image: url('../img/icon-fb.png');
+		}
+
+		&--inst {
+			background-image: url('../img/icon-inst.png');
 		}
 	}
 }

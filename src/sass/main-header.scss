@@ -20,7 +20,59 @@
 		background-position: 0 0;
 		background-size: cover;
 	}
-	
+
+	&__phone {
+		position: relative;
+		margin: 0 auto;
+		width: 320px;
+		text-align: center;
+		font-size: 0;
+		opacity: 0.6;
+		transition: 0.3s;
+
+		a {
+			margin-right: 12px;
+			font-family: 'Kurale', 'Georgia', 'Times New Roman', 'Times', serif;
+		  	font-size: $font-size;
+		  	line-height: 1.1;
+		  	color: $color-text-hover;
+		  	text-decoration: none;
+
+		  	&:hover,
+		  	&:active {
+		  		color: $color-text-hover;
+		  		text-decoration: none;
+		  	}
+
+		  	&:last-child {
+		  		margin-right: 0;
+		  	}
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: 1px;
+		    left: 7px;
+		    width: 11px;
+		    height: 14px;
+			background-image: url('../img/icon-phone.png');
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			background-size: cover;
+			opacity: 0.6;
+			transition: 0.3s;
+		}
+
+		&:hover,
+		&:active {
+			opacity: 1;
+			&::before {
+				opacity: 1;
+			}
+		}
+	}
+
 	@include mobile {
 		&__logo {
 			width: 281px;

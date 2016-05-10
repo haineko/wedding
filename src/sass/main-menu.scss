@@ -1,6 +1,6 @@
 .main-menu {
 	position: relative;
-	margin: 0 auto;
+	margin: 0 auto 10px;
 	width: 490px;
 
 	&__list {
@@ -19,6 +19,7 @@
 		font-size: 14px;
 		font-weight: bold;
 		text-transform: uppercase;
+		transition: 0.4s;
 	}
 	
 	&__link {
