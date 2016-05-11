@@ -79,11 +79,38 @@
 			<a href="tel:+79158500982">8-915-850-09-82</a>
 		</div>
 	</footer>
+	<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
 	<script src="js/masonry.pkgd.min.js"></script>
 	<script src="js/imagesloaded.js"></script>
 	<script src="js/classie.js"></script>
 	<script src="js/AnimOnScroll.js"></script>
 	<script>
+
+// 	$(document).ready(function() {
+//   $('#gallery').masonry({
+//    // columnWidth: 320,
+//    itemSelector: '.gallery__item'
+//   }).imagesLoaded(function() {
+//    $('#gallery').masonry('reload');
+//   });
+// });
+		var grid = document.querySelector('.gallery');
+
+		var msnry = new Masonry( grid, {
+		  itemSelector: '.gallery__item',
+		  resizeable: true,
+		  percentPosition: true,
+		  transitionDuration: '0.8s'
+		});
+
+		imagesLoaded( grid ).on( 'progress', function() {
+		  // layout Masonry after each image loads
+		  msnry.layout();
+		  console.log("1");
+		  msnry.reloadItems();
+		  console.log("2");
+		});
+
 		new AnimOnScroll( document.getElementById( 'gallery' ), {
 			minDuration : 0.4,
 			maxDuration : 0.7,
