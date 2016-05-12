@@ -1,0 +1,108 @@
+.blog {
+	margin: 0 auto;
+	width: 98%;
+	font-size: 0;
+	&__item {
+		margin: 0 2% 60px 0;
+		width: 32%;
+		display: inline-block;
+		vertical-align: top;
+		font-size: 16px;
+
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+	}
+	
+
+	&__photo {
+		margin-bottom: 40px;
+		display: block;
+		width: 100%;
+		overflow: hidden;
+
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	header {
+		h1 {
+			margin: 0;
+			font-size: 16px;
+			line-height: 1;
+			text-transform: uppercase;
+
+			a {
+				display: block;
+				color: #464545;
+				text-decoration: none;
+				transition: all 0.3s linear;
+
+				&:hover,
+				&:active {
+					color: #ca7575;
+				}
+			}
+		}
+	}
+
+	&__intro {
+		p {
+			margin: 0;
+		}
+	}
+
+	&__date {
+		color: #ca7575;
+	}
+	
+	&__more {
+		position: relative;
+		margin-top: 20px;
+		padding-right: 16px;
+		display: inline-block;
+		font-size: 20px;
+		color: #ca7575;
+		text-decoration: none;
+		transition: all 0.3s linear;
+
+		&::after {
+			content: '>';
+			position: absolute;
+			bottom: -2px;
+			right: 0;
+		}
+
+		&:hover,
+		&:active {
+			color: #464545;
+		}
+	}
+
+	&__pagination {
+		margin: 0 auto;
+		padding: 0;
+	    display: block;
+	    width: 50%;
+	    font-size: 14px;
+	    text-align: center;
+	    list-style: none;
+	    
+	    li {
+	    	display: inline-block;
+	    }
+
+	    a {
+		    color: black;
+		    float: left;
+		    padding: 8px 16px;
+		    text-decoration: none;
+		    &.active {
+		    	color: #ca7575;
+		    }
+		}
+	}
+}

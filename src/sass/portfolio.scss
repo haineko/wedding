@@ -1,13 +1,17 @@
 .portfolio {
 	@include clearfix;
+	margin: 0 auto;
+	width: 98%;
+	font-size: 0;
 	
 	&__item {
 		position: relative;
-		float: left;
-		margin-right: 2%;
+		display: inline-block;
+		margin-right: 1%;
 		margin-bottom: 20px;
-		width: 32%;
-		height: 203px;
+		width: 24.25%;
+		height: auto;
+		vertical-align: top;
 		overflow: hidden;
 
 		img {
@@ -15,7 +19,7 @@
 			display: block;
 		}
 
-		&:nth-child(3n) {
+		&:nth-child(4n) {
 			margin-right: 0;
 		}
 
@@ -64,6 +68,10 @@
 		left: 50%;
 		margin: 0;
     	width: 90%;
+    	font-family: 'Lora', 'Georgia', 'Times New Roman', 'Times', serif;
+    	font-size: 14px;
+    	// font-weight: bold;
+    	text-transform: uppercase;
 		transform: translate(-50%, -50%);
 	}
 
