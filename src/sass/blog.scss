@@ -41,10 +41,10 @@
 				text-decoration: none;
 				transition: all 0.3s linear;
 
-				&:hover,
-				&:active {
-					color: #ca7575;
-				}
+				// &:hover,
+				// &:active {
+				// 	color: #ca7575;
+				// }
 			}
 		}
 	}
@@ -83,25 +83,34 @@
 	}
 
 	&__pagination {
-		margin: 0 auto;
+		margin: 60px auto 0;
 		padding: 0;
 	    display: block;
 	    width: 50%;
-	    font-size: 14px;
+	    font-size: 0;
 	    text-align: center;
 	    list-style: none;
+	   
 	    
 	    li {
 	    	display: inline-block;
+	    	vertical-align: top;
 	    }
 
 	    a {
-		    color: black;
-		    float: left;
-		    padding: 8px 16px;
+	    	margin-bottom: 6px;
+		    padding: 0px 12px;
+		    font-size: 16px;
+		    color: #464545;
 		    text-decoration: none;
-		    &.active {
+		    transition: all 0.3s linear;
+		    &.active,
+		    &:hover,
+		    &:active {
 		    	color: #ca7575;
+		    }
+		    &.active {
+		    	cursor: default;
 		    }
 		}
 	}

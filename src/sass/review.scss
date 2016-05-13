@@ -3,14 +3,15 @@
 	&__item {
 		@include clearfix;
 		padding: 15px 0;
-		border-top: 1px dotted #464545;
+		// border-top: 1px solid #D3D3D3;
 
-		&:last-child {
-			border-bottom: 1px dotted #464545;
-		}
+		// &:last-child {
+		// 	border-top: 1px solid #cfcfcf;
+		// }
 
 		&:first-of-type {
 			margin-top: 35px;
+			border-top: 1px solid #cfcfcf;
 		}
 	}
 
