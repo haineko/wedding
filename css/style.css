@@ -3261,7 +3261,7 @@ body {
 
 .album__item {
   width: 100%;
-  margin-bottom: 5px; }
+  margin-bottom: 8px; }
   .album__item img {
     margin: 0 auto;
     max-width: 100%;
@@ -3270,7 +3270,7 @@ body {
 
 .album__video {
   position: relative;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   padding-bottom: 56.25%;
   padding-top: 25px;
   height: 0; }
@@ -3391,5 +3391,3 @@ body {
     transition: all 0.3s linear; }
     .post__link:hover, .post__link:active {
       color: #464545; }
-    .post__link:visited {
-      color: #aaa; }
