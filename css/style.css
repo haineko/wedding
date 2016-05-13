@@ -3283,7 +3283,7 @@ body {
 
 .blog {
   margin: 0 auto;
-  width: 98%;
+  width: 80%;
   font-size: 0; }
   .blog__item {
     margin: 0 2% 60px 0;
@@ -3314,7 +3314,8 @@ body {
       -webkit-transition: all 0.3s linear;
       transition: all 0.3s linear; }
   .blog__intro p {
-    margin: 0; }
+    margin: 0;
+    line-height: 24px; }
   .blog__date {
     color: #ca7575; }
   .blog__more {
