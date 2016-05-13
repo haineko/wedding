@@ -3358,3 +3358,38 @@ body {
         color: #ca7575; }
       .blog__pagination a.active {
         cursor: default; }
+
+.post {
+  margin: 0 auto;
+  width: 98%; }
+  .post__photo {
+    display: block;
+    width: 100%;
+    overflow: hidden; }
+    .post__photo img {
+      display: block;
+      width: 100%;
+      height: auto; }
+  .post header h1 {
+    margin: 0;
+    font-size: 22px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #464545;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+  .post__intro p {
+    line-height: 24px; }
+  .post__date {
+    color: #ca7575; }
+  .post__link {
+    position: relative;
+    display: inline-block;
+    color: #ca7575;
+    text-decoration: none;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    .post__link:hover, .post__link:active {
+      color: #464545; }
+    .post__link:visited {
+      color: #aaa; }
