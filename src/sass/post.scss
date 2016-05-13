@@ -1,0 +1,56 @@
+.post {
+	margin: 0 auto;
+	width: 98%;
+
+	&__photo {
+		// margin-bottom: 40px;
+		display: block;
+		width: 100%;
+		overflow: hidden;
+
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	header {
+		h1 {
+			margin: 0;
+			font-size: 22px;
+			line-height: 1;
+			text-transform: uppercase;
+			color: #464545;
+			transition: all 0.3s linear;
+		}
+	}
+
+	&__intro {
+		p {
+			// margin: 0;
+			line-height: 24px;
+		}
+	}
+	
+
+	&__date {
+		color: #ca7575;
+	}
+	
+	&__link {
+		position: relative;
+		display: inline-block;
+		color: #ca7575;
+		text-decoration: none;
+		transition: all 0.3s linear;
+
+		&:hover,
+		&:active {
+			color: #464545;
+		}
+		&:visited {
+			color: #aaa;
+		}
+	}
+}
