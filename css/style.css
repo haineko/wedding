@@ -3142,7 +3142,7 @@ body {
     opacity: 1; } }
 
 .review__item {
-  padding: 15px 0; }
+  padding: 35px 0; }
   .review__item::before, .review__item::after {
     content: "";
     display: table;
