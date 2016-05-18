@@ -2839,6 +2839,7 @@ body {
     list-style: none;
     text-align: center; }
   .main-menu__item {
+    position: relative;
     font-family: 'Lora', 'Georgia', 'Times New Roman', 'Times', serif;
     margin: 0 12px 5px;
     display: inline-block;
@@ -2847,11 +2848,42 @@ body {
     text-transform: uppercase;
     -webkit-transition: 0.4s;
     transition: 0.4s; }
+    .main-menu__item:hover .main-menu__submenu, .main-menu__item:active .main-menu__submenu {
+      display: block; }
   .main-menu__link {
     color: #747373;
     text-decoration: none; }
     .main-menu__link:hover, .main-menu__link:active, .main-menu__link--active {
       color: #464545; }
+  .main-menu__subwrap {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding-top: 20px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 3; }
+  .main-menu__submenu {
+    margin: 0;
+    padding: 0;
+    width: 190px;
+    list-style: none;
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(34, 25, 25, 0.4); }
+    .main-menu__submenu li a {
+      margin: 0 10px;
+      padding: 5px 0;
+      display: block;
+      color: #747373;
+      text-decoration: none;
+      border-bottom: 1px solid #cfcfcf;
+      -webkit-transition: 0.4s;
+      transition: 0.4s; }
+      .main-menu__submenu li a:hover, .main-menu__submenu li a:active, .main-menu__submenu li a.active {
+        color: #464545; }
+    .main-menu__submenu li:last-child a {
+      border-bottom: none; }
   @media (max-width: 639px) {
     .main-menu {
       width: 100%; }
